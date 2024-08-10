@@ -1,5 +1,6 @@
 # Expense Tracker 
-https://github.com/me-vivek-kr/Expense-Tracker-using-Flutter/issues/1#issue-2459090126
+![Untitled design (1)](https://github.com/user-attachments/assets/4a60dad9-1b18-468d-9614-606598123388)
+
 
 A new Flutter project.
 
