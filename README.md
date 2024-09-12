@@ -1,4 +1,6 @@
-# expense_tracker
+# Expense Tracker 
+![Untitled design (1)](https://github.com/user-attachments/assets/4a60dad9-1b18-468d-9614-606598123388)
+
 
 A new Flutter project.
 
