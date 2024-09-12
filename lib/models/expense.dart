@@ -36,6 +36,30 @@ class Expense {
   String get formattedDate {
     return formatter.format(date);
   }
+
+  //static fromMap(Map data) {}
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'amount': amount,
+      'date': date.toIso8601String(),
+      'category': category.toString().split('.').last,
+    };
+  }
+
+
+  // Create an Expense object from a Map object
+  static Expense fromMap(Map<String, dynamic> map) {
+    return Expense(
+      title: map['title'],
+      amount: map['amount'],
+      date: DateTime.parse(map['date']),
+      category: Category.values.firstWhere(
+        (category) => category.toString().split('.').last == map['category'],
+      ),
+    );
+  }
 }
 
 class ExpenseBucket {
